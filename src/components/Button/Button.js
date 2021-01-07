@@ -7,7 +7,7 @@ export const Button = styled.button `
   border:none;
   font-size:16px;
   font-weight:600;
-  width: ${({back}) => back ? "50%" : "100%"};
+  width: ${({BackButton}) => BackButton ? "40%" : "100%"};
   font-family: 'Space Mono', monospace;
   outline:none;
   &:hover{

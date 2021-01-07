@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import { Button } from '../Button/Button';
 export const CommitCard = ({sha,commit:{message}}) => {
-  // const shorter_sha = sha.substring(0,7);
   return (
     <div className="col-lg-4 col-md-6">
       <Card className="card m-2">
@@ -41,6 +40,5 @@ const CardContent = styled.div `
 `;
 
 const Card = styled.div `
-  max-height:auto;
   background-color: ${props => props.theme.cardColor};
 `;
