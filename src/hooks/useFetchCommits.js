@@ -5,11 +5,13 @@ export const useFetchCommits = () => {
                                           loading:true});
   useEffect(()=>{
     getCommits(commits)
-    .then(res => {
-      setCommits({
-        commits: res,
-        loading:false
-      })
+    .then(({data}) => {
+      setTimeout(() => {
+        setCommits({
+          commits: data,
+          loading:false
+        })
+      }, 1500);
     })
   },[])
   return commits;
