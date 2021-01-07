@@ -13,3 +13,9 @@ p{
 button{
   font-family: 'Space Mono', monospace;
 }
+.not-found {
+  margin: 100px 0;
+  letter-spacing: 1px;
+  text-align: center;
+  color:white;
+}
