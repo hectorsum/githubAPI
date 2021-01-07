@@ -7,10 +7,12 @@ export const useFetchCommitInfo = (id) => {
     getCommitInfo(id)
     .then(({data:{author:{avatar_url}},
             data:{commit:{author,message}},
-            data:{commit:{author:{name,email}}}
+            data:{commit:{author:{name,email},
+                  committer:{date}}},
+            data:{html_url}
           }) => {
         setInfo({
-          info: {avatar_url,author,message,name,email},
+          info: {avatar_url,date,author,message,name,email,html_url},
           loading:false
         })
     })
