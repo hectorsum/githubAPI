@@ -1,5 +1,6 @@
 const moment = require('moment-timezone');
 
+// * In this file we convert UTF Timezone to PET Timezone, to get our actual hour (Peru)
 export const getPetTime = (data) =>{
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const elements = data.map(({commit:{committer:{date}}}) => {
