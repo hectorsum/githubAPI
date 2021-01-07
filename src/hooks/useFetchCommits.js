@@ -4,15 +4,17 @@ export const useFetchCommits = () => {
   const [commits, setCommits] = useState({commits:[],
                                           loading:true});
   useEffect(()=>{
+    let mounted = true;
     getCommits(commits)
     .then(({data}) => {
-      setTimeout(() => {
+      if(mounted){
         setCommits({
           commits: data,
           loading:false
         })
-      }, 1500);
+      }
     })
-  },[])
+    return () => mounted = false;
+  },[commits]);
   return commits;
 }
