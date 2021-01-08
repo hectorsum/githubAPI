@@ -7,12 +7,10 @@ import { getPetTime } from '../../helpers/getPetTime';
 export const CardDetailed = () => {
   const {id} = useParams();
   const {info,loading} = useFetchCommitInfo(id);
-  if(!info){
-    return <Redirect to={'/'}/>
-  }
-  const {avatar_url,message,name,email,date,html_url} = info;
+  if(!info) return <Redirect to={'/'}/>
+  const {avatar_url,message,name,email,date:date_to_parse,html_url} = info;
   const shorter_sha = id.substring(0,7);
-  let [date_parsed,time] = getPetTime(date);
+  let [date,time] = getPetTime(date_to_parse);
   document.title = 'Detail Commit';
   return (
       (loading) ? <Loading className="animate__animated animate__flash">Loading..</Loading> : (
@@ -25,7 +23,7 @@ export const CardDetailed = () => {
               <p> <b>Contributor:</b> {name}</p>
               <p> <b>Email:</b> {email}</p>
               <p> <b>Commit message:</b> {message}</p>
-              <p> <b>Date:</b> {date_parsed}</p>
+              <p> <b>Date:</b> {date}</p>
               <p> <b>Time:</b> {time}</p>
               <p> <b>Commit:</b> <a href={html_url} target="blank">{shorter_sha}</a></p>
               

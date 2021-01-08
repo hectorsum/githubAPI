@@ -17,8 +17,8 @@ export const getPetTime = (data) =>{
   mins = `${(js_date.getMinutes() < 10 ? '0' : '') + js_date.getMinutes()}`;
   secs = `${(js_date.getSeconds() < 10 ? '0' : '') + js_date.getSeconds()}`;
   
-  const fullDate = `${months[month]}, ${day} ${year}`;
+  const date = `${months[month]}, ${day} ${year}`;
   const time = `${hour}:${mins}:${secs}`;
 
-  return [fullDate,time];
+  return [date,time];
 }
