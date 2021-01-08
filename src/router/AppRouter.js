@@ -9,7 +9,7 @@ import { CardDetailed } from '../components/CardDetailed/CardDetailed';
 import { NotFound } from '../components/NotFound/NotFound';
 export const AppRouter = () =>{
   return(
-    <Router>
+    <Router basename="/githubAPI">
       <Switch>
         <Route exact path="/" component={CommitGridCard}/>
         <Route path="/detail/:id" component={CardDetailed}/>
