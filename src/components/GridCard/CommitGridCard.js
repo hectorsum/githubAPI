@@ -5,6 +5,7 @@ import { CommitCard } from '../Card/CommitCard';
 
 export const CommitGridCard = () => {
   const {commits,loading} = useFetchCommits();
+  document.title = 'Github API';
   return (
     <CommitGridCardSection className="container mt-4 ">
       <Title>Github API - Hector Herrera 👨‍💻</Title>
@@ -14,11 +15,7 @@ export const CommitGridCard = () => {
       }
       <div className="col-lg-12">
         <GridCard className="row animate__animated animate__fadeIn">
-          {
-            commits.map(commit => {
-              return <CommitCard key={commit.sha} {...commit}/>
-            })
-          }
+          { commits.map(commit => <CommitCard key={commit.sha} {...commit}/> ) }
         </GridCard>
       </div>
     </CommitGridCardSection>

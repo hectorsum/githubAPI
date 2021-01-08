@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
 
 export const NotFound = () => {
@@ -8,9 +8,9 @@ export const NotFound = () => {
       <h4 className="not-found">
       Sorry, but the page you have requested was not found. 🌑
       </h4>
-      <NavLink to="/">
+      <Link to="/">
         <Button>Go Home ⬅️</Button>
-      </NavLink>
+      </Link>
     </div>
   )
 };
