@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <CommitCard/> Should show the <CommitCard/> component correctly 1`] = `
+<div
+  className="col-lg-4 col-md-6"
+>
+  <styled.div
+    className="card m-2"
+  >
+    <styled.div
+      className="card-body"
+    >
+      <styled.h3 />
+      <styled.p>
+        1
+      </styled.p>
+      <styled.hr />
+      <Link
+        to="./detail/undefined"
+      >
+        <styled.button>
+          See more.. ➡️
+        </styled.button>
+      </Link>
+    </styled.div>
+  </styled.div>
+</div>
+`;

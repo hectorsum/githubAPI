@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <CommitGridCard/> Should show <CommitGridCard/> component correctly 1`] = `
+<styled.div
+  className="container mt-4 "
+>
+  <styled.h1>
+    Github API - Hector Herrera 👨‍💻
+  </styled.h1>
+  <styled.hr />
+  <styled.div
+    className="animate__animated animate__flash"
+  >
+    Loading..
+  </styled.div>
+  <div
+    className="col-lg-12"
+  >
+    <styled.div
+      className="row animate__animated animate__fadeIn"
+    />
+  </div>
+</styled.div>
+`;
