@@ -4,6 +4,9 @@ In this test we can surely get all commits from this repository and show extra i
 ## Preview
 ![Preview](https://i.ibb.co/1m1vK8f/githubapi.jpg)
 
+## Give it a try!
+**<https://github-a.herokuapp.com/>**
+
 ## Technologies used
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=ffffff)
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=fff)
